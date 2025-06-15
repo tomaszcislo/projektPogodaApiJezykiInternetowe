@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather App</title>
+	<link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet">
+	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h2>Pogoda</h2>
+			<div class="weather-input">
+				<input type="text" name="city" id="city_input" placeholder="Wpisz miejscowość">
+				<button type="button" id="searchBtn">
+					<i class="fa-regular fa-search"></i> Szukaj
+				</button>
+				<button type="button" id="locationBtn">
+					<i class="bx bx-target-lock"></i> Pobierz lokalizacje
+				</button>
+				<button type="button" id="sites">
+					<a href="index.html"><i class="bx bx-target-lock"></i>Strona główna</a>
+				</button>
+				<button type="button" id="sites">
+					<a href="sunset.html"><i class="bx bx-target-lock"></i>Wschód i zachód</a>
+				</button>
+				<button type="button" id="sites">
+					<a href="dodatkowe.html"><i class="bx bx-target-lock"></i>Dodatkowe informacje</a>
+				</button>
+				<button type="button" id="sites">
+					<a href="dzisiejsza.html"><i class="bx bx-target-lock"></i>Dzisiejsza godzinna prognoza</a>
+				</button>
+			</div>
+		</header>
+		<main>
+		<div class="weather-data">
+			<div class="weather-left">
+				
+			</div>
+			<div class="weather-right">
+				<h2>Dodatkowe informacje</h2>
+				<div class="highlights">
+					<div class="card">
+						<div class="card-head">
+							<p>Wilgotność</p>
+						</div>
+						<div class="card-item">
+							<i class="fa-light fa-droplet fa-2x"></i>
+							<h2 id="humidityVal">____%</h2>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<p>Ciśnienie</p>
+						</div>
+						<div class="card-item">
+							<i class="fa-light fa-compass fa-2x"></i>
+							<h2 id="pressureVal">____hPa</h2>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<p>Widoczność</p>
+						</div>
+						<div class="card-item">
+							<i class="fa-light fa-eye fa-2x"></i>
+							<h2 id="visibilityVal">____km</h2>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		</main>
+	</div>
+	<script src="https://momentjs.com/downloads/moment.min.js"></script>
+	<script src="script_dodatkowe.js"></script>
+</body>
+</html>
